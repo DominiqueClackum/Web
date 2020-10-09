@@ -1,0 +1,155 @@
+
+body {
+	text-align: center;
+	vertical-align: center;
+	font-family: Georgia;
+	color: #118213;
+	font-size: 1em;
+}
+
+shopping-cart {
+	font-family: Georgia;
+	text-align: center;
+	margin: 50px;
+}
+
+#product-grid {
+	text-align: center;
+	display:grid;
+	grid-template-columns: auto auto auto auto;
+	margin: 20px;
+	
+}
+
+#shopping-cart table {
+	font-family: "Georgia";
+	text-align: center;
+	color: #118213;
+	width: 100%;
+	background-color: #7df57d;
+}
+
+#shopping-cart table td {
+	font-family: "Georgia";
+	color: #118213;
+	text-align: center;
+	background-color: #F0FFFA;
+}
+.txt-heading { 
+	text-align:left;
+}
+
+#btnEmpty {
+	font-family: Georgia;
+	background-color: #FFFFFF;
+	border: #d00000 2px solid;
+	padding: 5px 10px;
+	color: #d00000;
+	float: right;
+	text-decoration: none;
+	border-radius: 3px;
+	margin: 10px 0px;
+}
+
+.btnAddAction {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #efefef;
+    border: #E0E0E0 1px solid;
+    color: #211a1a;
+    float: left;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.hline-bottom {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000; 
+ 
+}
+.product-item {
+	float: left;
+	display: block;
+	background: #FFDAB9;
+	margin: 30px 30px 30px 30px;
+	border: #FFE4B5 1px solid;
+}
+
+.product-image {
+    width: auto;
+    height: auto;
+    display: block;
+    background-color: #FFF;
+} 
+
+.clear-float {
+	clear: both;
+}
+
+.demo-input-box {
+	border-radius: 2px;
+	border: #CCC 1px solid;
+	padding: 2px 1px;
+}
+
+.tbl-cart {
+	font-size: 1em;
+}
+
+.tbl-cart th {
+	font-weight: 550;
+}
+
+.product-title {
+ 	font-family: "Georgia";
+	text-align: center;
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+.product-price {
+	font-family: "Georgia";
+	text-align: center;
+	color: #224522;
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+	float:left;
+}
+
+.cart-action {
+	float: center;
+}
+
+.product-quantity {
+    font-family: "Georgia";
+    color: #666153;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: #FFE4B5 1px solid;
+}
+
+.product-tile-footer {
+    text-align: center;
+    font-family: "Georgia";
+    padding: 15px 15px 15px 15px;
+    overflow: auto;
+}
+
+.cart-item-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: #E0E0E0 1px solid;
+    padding: 5px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.no-records {
+	text-align: center;
+	clear: both;
+	margin: 38px 0px;
+}

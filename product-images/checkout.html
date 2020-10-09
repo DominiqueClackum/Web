@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title style ="color:#7a0099">Checkout</title>
+</head>
+<body bgcolor="#660080">
+<h2 style ="color:#f0b3ff"; align="center">Checkout</h2>
+<hr />
+
+<h3  style ="color:#f0b3ff"; align="center">Please Fill Out Form</h3>
+<form action='http://web-students.armstrong.edu/~dc12030/sc/thanks.html'">
+<table id="contact" align="center" bgcolor="lavender" border="2">
+<tr><td>First Name:<input size="20" maxlength="20" name="fname" type="text" title="Enter your first name" required /><br> <br>
+<tr><td>Last Name:<input size="20" maxlength="20" name="lname" type="text" title="Enter your last name" required /><br> <br>
+<tr><td>Shipping Address:<input size="20" maxlength="30" name="address" type="text" title="Enter your address" required /><br> <br>
+<tr><td>Shipping Address Line 2:<input size="20" maxlength="20" name="address" type="text" title="Enter your second address line" /><br> <br>
+<tr><td>City: <input size="12" maxlength="12" name="address" type="text" pattern="[A-Za-z]+{1,14}" required /> <br> <br>
+<tr><td>State: <input size="2" maxlength="2" name="address" type="text" placeholder="Ex: AL"pattern="[A-Za-z]{2}" required /> <br> <br>
+<tr><td>Zip:<input size="5" maxlength="5" name="zip" type="text" pattern="[0-9]{5}" title="Enter your zip code" required /><br> <br>
+<tr><td>Telephone:<input size="13" name="phone" type="text" placeholder="Ex:1234567890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="13" title="Enter your phone number" required /><br> <br>
+<tr><td>Email:<input size="20" maxlength="30" name="email" type="email" title="Enter your email address" required /><br> <br>
+<tr><td>Payment Type:<select name="Select Card Type" required><br /> <br />					
+<option value="cardtype">Visa</option><br /> <br />
+<option value="cardtype">Mastercard</option></select><br /> <br />
+<tr><td>Credit Card Number: <input size="16" maxlength="20" name="creditcardno" type="text" pattern="[0-9]{16}" required /><br> <br>
+<label for="Expiration">Exp. (MM/YYYY)</label>
+<input type="text" name="exp-month" id="exp-month" size="2" pattern="[0-9]{2}" required />
+<span> / </span>
+<input type="text" name="exp-year" id="exp-year" size="4" pattern="[0-9]{4}"required /><br> <br>
+CVV: <input size="3" maxlength="4" name="address" type="text" pattern="[0-9]{3}" required /> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("input[name='chkPassPort']").click(function () {
+            if ($("#chkYes").is(":checked")) {
+                $("#txtPassportNumber").removeAttr("disabled");
+                $("#txtPassportNumber").focus();
+            } else {
+                $("#txtPassportNumber").attr("disabled", "disabled");
+            }
+        });
+    });
+</script>
+<tr><td><span>Is billing address different from shipping address?</span><br /><br />
+<label for="chkYes">
+    <input type="radio" id="chkYes" name="chkPassPort" />
+    Yes
+</label>
+<label for="chkNo">
+    <input type="radio" id="chkNo" name="chkPassPort" />
+    No
+</label>
+Billing Address:
+<input type="text" id="txtPassportNumber" disabled="disabled" /><br /><br />
+Billing Address Line 2:
+<input type="text" id="txtPassportNumber" disabled="disabled" /><br />
+
+<!-- Shipping Radio Buttons -->
+<tr><td>Choose Preferred Shipping Method: <br /><br />
+<input name="shipping" value="First-Class" type="radio" required />USPS First-Class (Next-Day Shipping) <br /> <br />
+<input name="shipping" value="Priority" type="radio" required /> USPS Priority (1-2 Days) <br />	<br />
+<input name="shipping" value="Express" type="radio" required />USPS First-Class (3-5 Days) <br /> <br />
+<input name="shipping" value="Standard" type="radio" required /> USPS Standard (4-7 Days) <br />	<br />			 
+</table>
+<div align="center">
+<input onclick="location.href='http://web-students.armstrong.edu/~dc12030/sc/'"type="button" value="Return Home" style=" background-color:white; border-color:#00C5FF; color:black;"/>
+<input value="Reset" type="reset" style="background-color:white; border-color:#FF4600; color:black;" />
+<input  value="Submit" type="submit" name="submit" style=" background-color:white; border-color:#33FF83; color:black;" />
+</div>			
+</form>
+<hr />
+</body>
+</html>
